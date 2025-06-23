@@ -53,6 +53,6 @@ document.addEventListener('DOMContentLoaded', () => {
         // Display a message indicating the OTP is being verified
         statusMessage.textContent = `Verifying OTP: ${otpInput.value}... (This is where you'd send to your backend)`;
         console.log('OTP submitted:', otpInput.value);
-        // In a real application, you would send otpInput.value to your server for verification.
+        // In a real application, you would send otpInput.value to your server for verification. test
     });
 });
