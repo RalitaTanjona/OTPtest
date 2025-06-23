@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebOTP API Example (No jQuery)</title>
+</head>
+<body>
+    <h1>Enter your OTP</h1>
+    <form id="otpForm">
+        <label for="otpInput">OTP:</label>
+        <input type="text" id="otpInput" name="otpInput" autocomplete="one-time-code" inputmode="numeric" pattern="[0-9]*" required minlength="4" maxlength="8">
+        <button type="submit">Verify</button>
+    </form>
+
+    <p id="statusMessage"></p>
+
+    <script src="webotp.js"></script>
+</body>
+</html>
